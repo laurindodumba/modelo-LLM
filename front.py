@@ -1,4 +1,5 @@
 import streamlit as st
+import ai
 
 # Injeta o CSS do Bootstrap ou estilos personalizados
 def inject_bootstrap():
@@ -43,6 +44,5 @@ elif page == "INSIGHTS":
     create_footer()
 
 elif page == "CONFIGURAÇÃO":
-    st.title("CONFIGURAÇÃO")
-    st.write("parametros de configuração da API")
-    create_footer()
+    ai.config_page() #chama as informações de configuração da API OPENAI
+    create_footer() # Funcão para chamar o rodapé
